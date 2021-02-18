@@ -1,5 +1,5 @@
-[![My github stats](https://github-readme-stats.vercel.app/api?username=memandip&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+[![My github stats](https://github-readme-stats.vercel.app/api?username=memandip&show_icons=true&theme=dark)](https://github.com/memandip/memandip)
 
 <br />
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=memandip&layout=compact)](https://github.com/memandip/memandip)
