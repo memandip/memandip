@@ -1,9 +1,8 @@
 # Hi there 👋
-[![My github stats](https://github-readme-stats.vercel.app/api?username=memandip&show_icons=true&theme=dark)](https://github.com/memandip/memandip)
-<br />
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=memandip&layout=compact)](https://github.com/memandip/memandip)
+[![My github stats](https://github-readme-stats.vercel.app/api?username=memandip&show_icons=true&theme=radical)](https://github.com/memandip/memandip)
 
-<p>
-  Visitor count<br>
-  <img src="https://profile-counter.glitch.me/memandip/count.svg" />
-</p>
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=memandip&layout=compact&theme=radical)](https://github.com/memandip/memandip)
+
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=MichaelCade&theme=dark)](https://git.io/streak-stats)
+
+![](https://komarev.com/ghpvc/?username=memandip&color=lightgrey)
