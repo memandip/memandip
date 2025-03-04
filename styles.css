@@ -1,0 +1,366 @@
+/* Modern CV Styles */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #333;
+    --background-color: #fff;
+    --section-spacing: 2rem;
+    --border-color: #e0e0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: var(--section-spacing);
+    padding: 2rem 0;
+    border-bottom: 2px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-info p {
+    color: #fff;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+section:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+section.skills {
+    margin-top: 0;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.summary p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+/* Experience Section */
+.job {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.job:last-child {
+    margin-bottom: 1rem;
+}
+
+.company {
+    color: var(--primary-color);
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.technologies {
+    margin-top: 1rem;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+ul {
+    list-style-position: outside;
+    margin-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skills-grid .skill-category {
+   margin-bottom: 1.5rem;
+}
+
+.skill-category {
+    background-color: #f9f9f9;
+    padding: 0.8rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.skill-category h3 {
+    margin-bottom: 0.3rem;
+}
+
+.skill-category ul {
+    margin-bottom: 0;
+}
+
+/* Project Section */
+.project {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.project .role {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+/* Language Section */
+.language-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.language-category {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+/* Education Section */
+.degree {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.degree p {
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+/* Print Styles */
+@media print {
+    @page {
+        size: A4;
+        margin: 1.5cm;
+    }
+
+    html, body {
+        width: 210mm;
+        height: 297mm;
+        background-color: white;
+        color: black;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    header {
+        background-color: white;
+        color: var(--primary-color);
+        padding: 1rem 0;
+        border-radius: 0;
+        page-break-after: avoid;
+    }
+
+    header h1, header .subtitle, .contact-info p {
+        color: var(--primary-color);
+    }
+
+    .summary {
+        page-break-after: avoid;
+    }
+
+    .job {
+        page-break-inside: avoid;
+        background-color: white;
+        border: 1px solid var(--border-color);
+    }
+
+    .skills {
+        page-break-before: avoid;
+        page-break-after: avoid;
+    }
+
+    .skills-grid {
+        break-inside: avoid;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .skill-category {
+        background-color: white;
+        border: 1px solid var(--border-color);
+        break-inside: avoid;
+        padding: 0.5rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .skills h2 {
+        margin-bottom: 0.8rem;
+    }
+
+    .projects {
+        page-break-before: always;
+    }
+
+    .project {
+        page-break-inside: avoid;
+        background-color: white;
+        border: 1px solid var(--border-color);
+    }
+
+    .education, .languages {
+        page-break-inside: avoid;
+    }
+
+    .degree, .language-category {
+        background-color: white;
+        border: 1px solid var(--border-color);
+    }
+
+    section {
+        margin-bottom: 0.8rem;
+        padding: 0;
+    }
+
+    section:not(:last-child) {
+        border-bottom: none;
+    }
+
+    section.skills {
+        margin-top: 0;
+    }
+
+    .experience {
+        margin-bottom: 0.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* Reduce font sizes slightly for better fit */
+    body {
+        font-size: 11pt;
+    }
+
+    h1 {
+        font-size: 24pt;
+    }
+
+    h2 {
+        font-size: 16pt;
+    }
+
+    h3 {
+        font-size: 14pt;
+    }
+
+    .technologies {
+        font-size: 10pt;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    header {
+        border-radius: 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 1rem 0.5rem;
+    }
+
+    .job, .project, .degree {
+        padding: 0.8rem;
+    }
+}
