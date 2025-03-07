@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandip Chaudhary - Senior Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Override styles for Senior Engineer CV */
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 0.3rem;
+            }
+            .skill-category {
+                margin-bottom: 0.3rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 0.2rem;
+            }
+            .skill-category {
+                padding: 0.2rem 0;
+            }
+            .skill-category ul {
+                margin-left: 0.5rem;
+            }
+        }
+        .certification-list {
+            margin-bottom: 0;
+        }
+        .certification-list a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .certification-list a:hover {
+            color: var(--primary-color);
+        }
+        section:not(:last-child) {
+            border-bottom: none;
+        }
+        section {
+            margin-bottom: 0.3rem;
+            padding: 0.2rem 0;
+        }
+        h2 {
+            margin-bottom: 0.2rem;
+            border-bottom: none;
+        }
+        .skills {
+            margin-bottom: 0.2rem;
+        }
+        .skills-grid {
+            gap: 0.2rem;
+        }
+        .job, .project {
+            padding: 0.2rem 0;
+            margin-bottom: 0.3rem;
+        }
+        .job-section {
+            margin-bottom: 0.2rem;
+        }
+        .company {
+            margin-bottom: 0.2rem;
+        }
+        ul {
+            margin-bottom: 0.2rem;
+        }
+        li {
+            margin-bottom: 0.15rem;
+        }
+        .technologies {
+            margin-top: 0.2rem;
+        }
+        .project h3 a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .project h3 a:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mandip Chaudhary</h1>
+            <p class="subtitle">Senior Software Engineer</p>
+            <div class="contact-info">
+                <p>📍 Imadol, Lalitpur</p>
+                <p>📱 +9779840070036</p>
+                <p>📧 mandip810@gmail.com</p>
+            </div>
+        </header>
+
+        <section class="summary">
+            <h2>Professional Summary</h2>
+            <p>Senior Software Engineer with 7+ years of experience in full-stack development, specializing in scalable microservices architecture and high-performance web applications. Proven track record in implementing complex technical solutions using modern technologies and best practices.  Demonstrated expertise in architecting scalable solutions, leading development teams, and driving technical innovation. Strong track record of successfully delivering complex projects while mentoring junior developers and establishing best practices. Passionate about creating high-performance solutions through smart work, commitment, and continuous technical advancement.</p>
+        </section>
+
+        <section class="experience">
+            <h2>Professional Experience</h2>
+            
+            <div class="job">
+                <h3>Senior Software Engineer</h3>
+                <p class="company">Fusemachines Nepal Pvt Ltd | August 2022 - Present</p>
+                
+                <div class="job-section">
+                    <h4>Technical Contributions</h4>
+                    <ul>
+                        <li>Architected and implemented event-driven healthcare data integration platform using microservices</li>
+                        <li>Developed high-performance CI/CD pipelines with GitHub Actions and Kubernetes, reducing deployment time by 60%</li>
+                        <li>Implemented real-time EHR data exchange system using Node.js and WebSocket</li>
+                        <li>Designed scalable database architecture using PostgreSQL and Redis for caching</li>
+                    </ul>
+                </div>
+                <p class="technologies"><strong>Technologies:</strong> Node.js, Express.js, Next.js, NestJS, TypeScript, Redis, PostgreSQL, Docker, Kubernetes</p>
+            </div>
+
+            <div class="job">
+                <h3>Senior Software Engineer</h3>
+                <p class="company">Arrowhead Technology Pvt Ltd | July 2021 - July 2022</p>
+
+                <div class="job-section">
+                    <h4>Technical Contributions</h4>
+                    <ul>
+                        <li>Developed high-throughput ETL processes using Kafka and Node.js for real estate data processing</li>
+                        <li>Implemented Elasticsearch integration for advanced search capabilities</li>
+                        <li>Built scalable RESTful APIs using TypeScript and Node.js</li>
+                        <li>Optimized frontend performance using React.js best practices</li>
+                    </ul>
+                </div>
+                <p class="technologies"><strong>Technologies:</strong> JavaScript, React.js, Node.js, TypeScript, Elasticsearch, Kafka</p>
+            </div>
+
+            <div class="job">
+                <h3>Senior Software Engineer & Team Lead</h3>
+                <p class="company">Fintech Nepal | January 2019 - July 2021</p>
+
+                <div class="job-section">
+                    <h4>Technical Contributions</h4>
+                    <ul>
+                        <li>Led architecture and development of comprehensive college management system</li>
+                        <li>Implemented complex database optimizations improving system performance by 40%</li>
+                        <li>Developed automated reporting system with Excel and CSV export capabilities</li>
+                        <li>Designed and optimized database architecture and system workflows</li>
+                    </ul>
+                </div>
+                <p class="technologies"><strong>Technologies:</strong> Symfony, Node.js, React.js, Redux, MySQL</p>
+            </div>
+
+            <div class="job">
+                <h3>Software Engineer</h3>
+                <p class="company">Yarsha Studio Pvt Ltd | August 2016 - December 2018</p>
+
+                <div class="job-section">
+                    <h4>Technical Contributions</h4>
+                    <ul>
+                        <li>Developed fleet management system's web interface using React.js</li>
+                        <li>Implemented real-time vehicle tracking with WebSocket integration</li>
+                        <li>Built content management system for leading news portal</li>
+                        <li>Enhanced SEO through server-side rendering implementation</li>
+                    </ul>
+                </div>
+                <p class="technologies"><strong>Technologies:</strong> Symfony, Node.js, React.js, Redux, MySQL, WebSocket</p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Core Technologies</h3>
+                    <ul>
+                        <li>Node.js, Express.js, NestJS</li>
+                        <li>React.js, Next.js, Redux</li>
+                        <li>TypeScript/JavaScript</li>
+                        <li>PHP (Symfony, Laravel)</li>
+                        <li>REST APIs</li>
+                        <li>Microservices Architecture</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Infrastructure & DevOps</h3>
+                    <ul>
+                        <li>Docker, Kubernetes</li>
+                        <li>CI/CD (GitHub Actions)</li>
+                        <li>AWS, Azure</li>
+                        <li>System Architecture</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Data & Performance</h3>
+                    <ul>
+                        <li>PostgreSQL, MySQL</li>
+                        <li>MongoDB, DynamoDB</li>
+                        <li>Redis, Elasticsearch</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Key Projects</h2>
+            
+            <div class="project">
+                <h3><a href="https://www.avodahmed.com/" target="_blank" rel="noopener noreferrer">AvodahMed</a> | Healthcare Data Integration Platform</h3>
+                <ul>
+                    <li>Built microservices architecture for real-time healthcare data processing</li>
+                    <li>Implemented event-driven architecture using Node.js and Redis Pub/Sub</li>
+                    <li>Designed and developed automated testing and deployment pipelines</li>
+                    <li>Optimized system for high-volume data processing</li>
+                </ul>
+                <p class="technologies"><strong>Technologies:</strong> Node.js, NestJS, TypeScript, Kubernetes</p>
+            </div>
+
+            <div class="project">
+                <h3><a href="https://hrrpnepal.org/" target="_blank" rel="noopener noreferrer">HRRP Nepal</a> | Content Management System</h3>
+                <ul>
+                    <li>Developed dynamic map generation system using TOPOJSON and D3.js</li>
+                    <li>Built RESTful API architecture for frontend integration</li>
+                    <li>Implemented background processing with web workers</li>
+                    <li>Enhanced SEO through server-side rendering implementation</li>
+                </ul>
+                <p class="technologies"><strong>Technologies:</strong> Node.js, React.js, Redux, D3.js, Symfony</p>
+            </div>
+
+            <div class="project">
+                <h3><a href="https://annapurnapost.com/" target="_blank" rel="noopener noreferrer">Annapurnapost</a> | News Portal Application</h3>
+                <ul>
+                    <li>Developed responsive frontend components with React.js</li>
+                    <li>Implemented efficient state management using Redux</li>
+                    <li>Built server-side rendering system for dynamic meta tags</li>
+                    <li>Integrated backend services using RESTful APIs</li>
+                </ul>
+                <p class="technologies"><strong>Technologies:</strong> Node.js, React.js, Redux, Symfony</p>
+            </div>
+
+            <div class="project">
+                <h3><a href="https://kantipurjob.com/" target="_blank" rel="noopener noreferrer">KantipurJob</a> | Job Portal Application</h3>
+                <ul>
+                    <li>Developed comprehensive user management system</li>
+                    <li>Built job application tracking and resume management features</li>
+                    <li>Implemented secure authentication and authorization</li>
+                    <li>Created optimized database queries for better performance</li>
+                </ul>
+                <p class="technologies"><strong>Technologies:</strong> PHP, Symfony, MySQL, jQuery</p>
+            </div>
+
+            <div class="project">
+                <h3><a href="https://remine.com/" target="_blank" rel="noopener noreferrer">Remine</a> | Multiple Listing System</h3>
+                <ul>
+                    <li>Engineered core components of a real estate platform facilitating connections between agents, lenders, and consumers</li>
+                    <li>Developed and optimized ETL pipeline for processing high-volume real estate data streams into Elasticsearch</li>
+                    <li>Implemented high-performance search auto-complete feature using Elasticsearch aggregations and fuzzy matching</li>
+                    <li>Enhanced system stability through comprehensive bug fixes and performance optimizations in both frontend and backend</li>
+                </ul>
+                <p class="technologies"><strong>Technologies:</strong> JavaScript, React.js, Node.js, TypeScript, Elasticsearch, RESTful APIs</p>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="degree">
+                <h3>BSc. Computer Science and Information Technology (CSIT)</h3>
+                <p>Madan Bhandari Memorial College, Kathmandu (2014-2018)</p>
+            </div>
+            <div class="degree">
+                <h3>Intermediate</h3>
+                <p>Capital College and Research College, Kathmandu— Intermediate (2013 - 2014)</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
