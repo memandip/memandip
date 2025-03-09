@@ -24,7 +24,7 @@ body {
 .container {
     max-width: 210mm;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -66,8 +66,8 @@ header .subtitle {
 
 /* Section Styles */
 section {
-    margin-bottom: 1.5rem;
-    padding: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0;
 }
 
 section:not(:last-child) {
@@ -80,15 +80,15 @@ section.skills {
 
 h2 {
     color: var(--primary-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     font-size: 1.5rem;
-    border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 0.2rem;
 }
 
 h3 {
     color: var(--secondary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     font-size: 1.2rem;
 }
 
@@ -100,61 +100,72 @@ h3 {
 
 /* Experience Section */
 .job {
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    border-radius: 4px;
-    background-color: #f9f9f9;
+    padding: 0.4rem 0;
 }
 
 .job:last-child {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .company {
     color: var(--primary-color);
     font-style: italic;
-    margin-bottom: 1rem;
+    margin-bottom: 0.4rem;
     font-weight: 500;
 }
 
+.job-section {
+    margin-bottom: 0.5rem;
+}
+
+.job-section:last-child {
+    margin-bottom: 0.4rem;
+}
+
+.job-section h4 {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    border-bottom: 1px dashed var(--secondary-color);
+    padding-bottom: 0.1rem;
+}
+
 .technologies {
-    margin-top: 1rem;
+    margin-top: 0.4rem;
     color: var(--secondary-color);
     font-size: 0.9rem;
 }
 
 ul {
     list-style-position: outside;
-    margin-left: 1.2rem;
-    margin-bottom: 1rem;
+    margin-left: 0.75rem;
+    margin-bottom: 0.4rem;
 }
 
 li {
-    margin-bottom: 0.5rem;
-    line-height: 1.4;
+    margin-bottom: 0.3rem;
+    line-height: 1.2;
 }
 
 /* Skills Section */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 0.4rem;
+    margin-bottom: 0.4rem;
 }
 
 .skills-grid .skill-category {
-   margin-bottom: 1.5rem;
+   margin-bottom: 0.5rem;
 }
 
 .skill-category {
-    background-color: #f9f9f9;
-    padding: 0.8rem;
-    border-radius: 4px;
-    margin-bottom: 0.5rem;
+    padding: 0.3rem 0;
+    margin-bottom: 0.3rem;
 }
 
 .skill-category h3 {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
 }
 
 .skill-category ul {
@@ -163,37 +174,64 @@ li {
 
 /* Project Section */
 .project {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background-color: #f9f9f9;
-    border-radius: 4px;
+    margin-bottom: 0.75rem;
+    padding: 0.4rem 0;
 }
 
 .project .role {
     color: var(--secondary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.4rem;
     font-size: 0.95rem;
+}
+
+.project .technologies {
+    margin-top: 0.4rem;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 0;
 }
 
 /* Language Section */
 .language-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1.5rem;
+    gap: 0.4rem;
 }
 
 .language-category {
-    background-color: #f9f9f9;
-    padding: 1rem;
-    border-radius: 4px;
+    padding: 0.4rem 0;
+}
+
+/* Certifications Section */
+.certification-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+}
+
+.certification {
+    padding: 0.4rem 0;
+}
+
+.certification-list {
+    margin-bottom: 0;
+}
+
+.certification-list a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.certification-list a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 /* Education Section */
 .degree {
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    background-color: #f9f9f9;
-    border-radius: 4px;
+    margin-bottom: 1rem;
+    padding: 0.75rem 0;
 }
 
 .degree p {
@@ -241,8 +279,6 @@ li {
 
     .job {
         page-break-inside: avoid;
-        background-color: white;
-        border: 1px solid var(--border-color);
     }
 
     .skills {
@@ -257,10 +293,8 @@ li {
     }
 
     .skill-category {
-        background-color: white;
-        border: 1px solid var(--border-color);
         break-inside: avoid;
-        padding: 0.5rem;
+        padding: 0.5rem 0;
         margin-bottom: 0.3rem;
     }
 
@@ -274,21 +308,23 @@ li {
 
     .project {
         page-break-inside: avoid;
-        background-color: white;
-        border: 1px solid var(--border-color);
     }
 
-    .education, .languages {
+    .education, .languages, .certifications {
         page-break-inside: avoid;
     }
 
-    .degree, .language-category {
-        background-color: white;
-        border: 1px solid var(--border-color);
+    .degree, .language-category, .certification {
+        page-break-inside: avoid;
+    }
+
+    .certification-list a {
+        color: var(--primary-color);
+        text-decoration: none;
     }
 
     section {
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.4rem;
         padding: 0;
     }
 
@@ -301,7 +337,7 @@ li {
     }
 
     .experience {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.3rem;
     }
 
     a {
